@@ -16,17 +16,13 @@ public class InterfazAtletas extends javax.swing.JFrame {
      */
     public InterfazAtletas() {
         initComponents();
-        
     }
-    
-    public void progreso(int valor){
-        Barra1.setValue(valor);
-    }
-    
-    public int numero(){
+
+    public int numero() {
         int numero = (int) (Math.random() * 10 + 1);
         return numero;
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -107,16 +103,16 @@ public class InterfazAtletas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonEmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonEmpezarActionPerformed
-        
-        Atleta atleta1 = new Atleta(numero(),this.Barra1,this.PorcentajeAtleta1);
-        Atleta atleta2 = new Atleta(numero(),this.Barra2,this.PorcentajeAtleta2);
-        Atleta atleta3 = new Atleta(numero(),this.Barra3,this.PorcentajeAtleta3);
-        Atleta atleta4 = new Atleta(numero(),this.Barra4,this.PorcentajeAtleta4);
+
+        Atleta atleta1 = new Atleta(numero(), this.Barra1, this.PorcentajeAtleta1);
+        Atleta atleta2 = new Atleta(numero(), this.Barra2, this.PorcentajeAtleta2);
+        Atleta atleta3 = new Atleta(numero(), this.Barra3, this.PorcentajeAtleta3);
+        Atleta atleta4 = new Atleta(numero(), this.Barra4, this.PorcentajeAtleta4);
         atleta1.start();
         atleta2.start();
         atleta3.start();
         atleta4.start();
-        
+
     }//GEN-LAST:event_BotonEmpezarActionPerformed
 
     /**
